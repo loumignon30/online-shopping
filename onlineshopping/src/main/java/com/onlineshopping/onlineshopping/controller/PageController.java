@@ -21,7 +21,7 @@ public class PageController {
 	@RequestMapping(value = { "/about" })
 	public ModelAndView about() {
 
-		ModelAndView mv = new ModelAndView("about");
+		ModelAndView mv = new ModelAndView("page");
 		mv.addObject("title", "About us");
 		mv.addObject("userClickAbout", true);
 
@@ -31,7 +31,7 @@ public class PageController {
 	@RequestMapping(value = { "/contact" })
 	public ModelAndView contact() {
 
-		ModelAndView mv = new ModelAndView("contact");
+		ModelAndView mv = new ModelAndView("page");
 		mv.addObject("title", "Contact us");
 		mv.addObject("userClickContact", true);
 

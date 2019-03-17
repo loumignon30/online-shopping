@@ -25,7 +25,11 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>Online shopping - ${title} </title>
+<title>Online shopping - ${title}</title>
+
+<script>
+	window.menu = '${title}';
+</script>
 
 <!-- Bootstrap core CSS -->
 <link href="${css}/bootstrap.min.css" rel="stylesheet">
@@ -37,40 +41,52 @@
 
 <body>
 
-	<!-- Navigation -->
-	<%@include file="./shared/navbar.jsp"%>
+	<div class="wrapper">
 
-	<!-- Page Content -->
-	
-	<!-- user cliques home -->
-	
-	<c:if test="${userClickHome == true  }">
-		<%@include file="homep.jsp"%>
-	</c:if>
-	
-	
-	<!-- user cliques home -->
-	<c:if test="${userClickAbout == true  }">
-		<%@include file="about.jsp"%>
-		
-	</c:if>
-	
-	<!-- user cliques home -->
-	<c:if test="${userClickContact == true  }">
-		<%@include file="contact.jsp"%>
-	</c:if>
-	
-	
+		<!-- Navigation -->
+		<%@include file="./shared/navbar.jsp"%>
 
-	<!-- /.container -->
+		<!-- Page Content -->
 
-	<!-- Footer -->
-	<%@include file="./shared/footer.jsp"%>
+		<!-- user cliques home -->
 
-	<!-- Bootstrap core JavaScript -->
-	<script src="${jquery}/jquery.min.js"></script>
-	<script src="${js}/bootstrap.bundle.min.js"></script>
+		<div class="content">
 
+			<c:if test="${userClickHome == true  }">
+				<%@include file="homep.jsp"%>
+			</c:if>
+
+
+			<!-- user cliques home -->
+			<c:if test="${userClickAbout == true  }">
+				<%@include file="about.jsp"%>
+
+			</c:if>
+
+			<!-- user cliques home -->
+			<c:if test="${userClickContact == true  }">
+				<%@include file="contact.jsp"%>
+			</c:if>
+
+		</div>
+		<!-- end of content.  -->
+
+		<!-- /.container -->
+
+		<!-- Footer -->
+		<%@include file="./shared/footer.jsp"%>
+
+		<!-- Bootstrap core JavaScript -->
+		<script src="${jquery}/jquery.min.js"></script>
+		<script src="${js}/bootstrap.bundle.min.js"></script>
+
+		<!-- self coded javascript (Yves codes)  -->
+		<script src="${js}/myapp.js"></script>
+		<!-- for the menu to show nav ex: about, contact.  -->
+
+
+	</div>
+	<!-- end of div wrapper starting from the body element -->
 </body>
 
 </html>
