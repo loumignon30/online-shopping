@@ -15,15 +15,19 @@
             </a>
           </li>
           
-          <li id="about" class="nav-item">
+          <li id="about" class="nav-item">  <!--  use the id="about"  on myapp.js to highlight the selected menu -->
             <a class="nav-link" href="${contextRoot}/about">About</a>
           </li>
-          <li id = "product" class="nav-item">
-            <a class="nav-link" href="${contextRoot}/listProducts">View Products</a>
-          </li>
-          <li id ="contact" class="nav-item">
+         
+          <li id ="contact" class="nav-item">  <!--  use id ="contact" on myapp.js to highlight the selected menu -->
             <a class="nav-link" href="${contextRoot}/contact">Contact</a>
           </li>
+          
+           <li id = "listProducts" class="nav-item">  <!--  use id = "listProducts" on myapp.js to highlight the selected menu -->
+            <a class="nav-link" href="${contextRoot}/show_all_products">View Products</a>
+          </li>
+          
+          
         </ul>
       </div>
     </div>

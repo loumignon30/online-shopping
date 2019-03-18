@@ -52,20 +52,25 @@
 
 		<div class="content">
 
-			<c:if test="${userClickHome == true  }">
+			<c:if test="${userClickHome == true  }">  <!-- see the Pagecontroller where we test cliques -->
 				<%@include file="homep.jsp"%>
 			</c:if>
 
 
 			<!-- user cliques home -->
-			<c:if test="${userClickAbout == true  }">
+			<c:if test="${userClickAbout == true  }">  <!-- see the Pagecontroller where we test cliques -->
 				<%@include file="about.jsp"%>
 
 			</c:if>
 
 			<!-- user cliques home -->
-			<c:if test="${userClickContact == true  }">
+			<c:if test="${userClickContact == true  }">  <!-- see the Pagecontroller where we test cliques -->
 				<%@include file="contact.jsp"%>
+			</c:if>
+			
+			<!-- user cliques category -->
+			<c:if test="${userClickAllProducts == true or userClickCategoryProducts == true}">  <!-- see the Pagecontroller where we test cliques -->
+				<%@include file="listProducts.jsp"%>
 			</c:if>
 
 		</div>
