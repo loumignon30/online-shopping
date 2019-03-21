@@ -35,6 +35,13 @@ footer{
 	margin: 0;
 }
 
+.dataTableImg{
+	
+	width: 60px;
+	height: 60px;
+	
+}
+
 /* .slide-image{
 	with:100%;
 }
